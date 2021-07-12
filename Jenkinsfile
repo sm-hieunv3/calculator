@@ -1,8 +1,10 @@
 pipeline {
-    agent any
-       triggers {
-        pollSCM "* * * * *"
-       }
+    agent {
+        docker {
+            image 'hashicorp/terraform:latest'
+            label 'any'
+        }
+    }
     stages {
         stage('Build Application') { 
             steps {
