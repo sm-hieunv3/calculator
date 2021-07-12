@@ -2,7 +2,6 @@ pipeline {
     agent {
         docker {
             image 'hashicorp/terraform:latest'
-            label 'any'
         }
     }
     stages {
