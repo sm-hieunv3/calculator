@@ -27,9 +27,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          projectBaseDir: .
           args: >
             -Dsonar.host.url=https://sonarcloud.io  
             -Dsonar.organization=sm-hieunv3
             -Dsonar.projectKey=sm-hieunv3_calculator
             -Dsonar.projectName=calculator
+            -Dsonar.sources=.
