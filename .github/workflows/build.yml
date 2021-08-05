@@ -31,4 +31,4 @@ jobs:
             -Dsonar.projectKey=sm-hieunv3_calculator
             -Dsonar.projectName=calculator
             -Dsonar.sources=api,public
-          -Dsonar.verbose=true
+            -Dsonar.verbose=true
